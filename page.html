@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os tópicos de fitness da SMART - ACTIVE: musculação, cardio, treinamento personalizado e levantamento de peso. Programas desenvolvidos por especialistas para maximizar seus resultados.">
+  <!-- CORRIGIDO: removido meta keywords obsoleto (ignorado por todos os motores de busca desde 2009) -->
+  <meta name="author" content="SMART - ACTIVE">
+  <meta property="og:title" content="Tópicos de Fitness | SMART - ACTIVE">
+  <meta property="og:description" content="Explore os fundamentos do condicionamento físico. Cada modalidade foi desenvolvida por especialistas para maximizar seus resultados.">
+  <meta property="og:type" content="website">
+  <!-- ADICIONADO: og:image, og:url e og:locale para compartilhamento completo em redes sociais -->
+  <meta property="og:image" content="./img/og-cover.jpg">
+  <meta property="og:url" content="https://smartactive.com.br/fitness-topics">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="theme-color" content="#080b0f">
+
+  <!-- ADICIONADO: Content Security Policy mínima para proteção XSS e supply chain -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data:; script-src 'self'">
+
+  <link rel="icon" href="assets/img/logo.ico" type="image/x-icon">  
+
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ADICIONADO: integrity (SRI) para CDN externo — protege contra supply chain attack -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/page.css">
+
+  <title>Tópicos de Fitness | SMART - ACTIVE</title>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ SKIP LINK -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ═══════════════════════════════════════════ HEADER -->
+  <header class="header" id="site-header">
+    <div class="header__inner">
+      <a href="index.html" class="header__back" aria-label="Voltar à página inicial SMART - ACTIVE">
+        <i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+        <span>SMART - ACTIVE</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Navegação do cabeçalho">
+        <span class="header__pill" aria-current="page">Fitness Topics</span>
+      </nav>
+
+      <!-- Mobile menu toggle -->
+      <button
+        class="header__menu-toggle"
+        id="mobile-toggle"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+        aria-label="Abrir menu de navegação"
+        type="button"
+      >
+        <i class="ri-menu-line" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Mobile navigation overlay -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="#flex-muscle" class="mobile-nav__link">Flex Muscle</a></li>
+        <li><a href="#cardio" class="mobile-nav__link">Cardio Exercise</a></li>
+        <li><a href="#personal-training" class="mobile-nav__link">Personal Training</a></li>
+        <li><a href="#weight" class="mobile-nav__link">Weight Lifting</a></li>
+        <li><a href="#crossfit" class="mobile-nav__link">CrossFit</a></li>
+        <li><a href="#bodybuilding" class="mobile-nav__link">Bodybuilding</a></li>
+        <li><a href="#box" class="mobile-nav__link">Box</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__inner">
+      <p class="hero__eyebrow" role="doc-subtitle">
+        <i class="ri-fire-line" aria-hidden="true"></i>
+        Programas de Treinamento
+      </p>
+      <hgroup>
+        <h1 class="hero__title" id="hero-title">
+          <span class="stroke">DOMINE</span><br>
+          <span class="filled">CADA TREINO</span>
+        </h1>
+        <p class="hero__desc">
+          Explore os fundamentos do condicionamento físico. Cada modalidade foi desenvolvida
+          por especialistas para maximizar seus resultados.
+        </p>
+      </hgroup>
+      <a href="#main-content" class="hero__cta" aria-label="Explorar modalidades de treino">
+        Explorar Modalidades
+        <i class="ri-arrow-down-line" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ STATS -->
+  <!-- CORRIGIDO: <aside> trocado por <section> — estatísticas são conteúdo central, não marginal -->
+  <section class="stats" aria-labelledby="stats-heading">
+    <h2 class="visually-hidden" id="stats-heading">Estatísticas SMART - ACTIVE</h2>
+    <!-- ADICIONADO: role="list" para compatibilidade com VoiceOver/iOS quando list-style: none é aplicado via CSS -->
+    <ul class="stats__inner" role="list">
+      <li class="stat">
+        <strong class="stat__num" aria-label="4 modalidades">4</strong>
+        <span class="stat__label">Modalidades</span>
+      </li>
+      <li class="stat">
+        <strong class="stat__num" aria-label="mais de 200 exercícios">200+</strong>
+        <span class="stat__label">Exercícios</span>
+      </li>
+      <li class="stat">
+        <strong class="stat__num" aria-label="mais de 50 profissionais">50+</strong>
+        <span class="stat__label">Profissionais</span>
+      </li>
+      <li class="stat">
+        <strong class="stat__num" aria-label="3.5 mil alunos">3.5K</strong>
+        <span class="stat__label">Alunos</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ MAIN CONTENT -->
+  <main class="section" id="main-content" aria-labelledby="topics-heading">
+
+    <header class="section__head">
+      <hgroup>
+        <p class="section__label">Conteúdo Principal</p>
+        <h2 class="section__title" id="topics-heading">TÓPICOS EM DESTAQUE</h2>
+      </hgroup>
+      <div class="section__controls">
+        <span class="section__count" aria-live="polite" id="topic-count">7 modalidades disponíveis</span>
+        <!-- Theme toggle -->
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Alternar tema claro/escuro"
+          title="Alternar tema"
+          type="button"
+        >
+          <i class="ri-moon-line" aria-hidden="true" id="theme-icon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Topic filter bar -->
+    <nav class="filter-bar" aria-label="Filtrar modalidades por categoria">
+      <button class="filter-btn filter-btn--active" data-filter="all"    aria-pressed="true"  type="button">Todas</button>
+      <button class="filter-btn" data-filter="blue"   aria-pressed="false" type="button">Força</button>
+      <button class="filter-btn" data-filter="teal"   aria-pressed="false" type="button">Cardio</button>
+      <button class="filter-btn" data-filter="amber"  aria-pressed="false" type="button">Personal Training</button>
+      <button class="filter-btn" data-filter="red"    aria-pressed="false" type="button">Pilates</button>
+      <button class="filter-btn" data-filter="orange" aria-pressed="false" type="button">CrossFit</button>
+      <button class="filter-btn" data-filter="purple" aria-pressed="false" type="button">Bodybuilding</button>
+      <button class="filter-btn" data-filter="green"  aria-pressed="false" type="button">Box</button>
+    </nav>
+
+    <!-- Cards grid -->
+    <section class="topics-grid" id="topics-grid" aria-label="Modalidades de treino">
+
+      <!-- CARD 1 — FEATURED -->
+      <article class="card card--blue card--featured" id="flex-muscle" data-category="blue" tabindex="0" aria-label="Flex Muscle – Força e Flexibilidade">
+        <figure class="card__visual">
+          <img
+            src="assets/img/muscle1.jpg"
+            alt="Atleta realizando flexão muscular com foco em força e controle"
+            class="card__img"
+            loading="eager"
+            fetchpriority="high"
+            width="600"
+            height="400"
+          >
+          <span class="card__num" aria-hidden="true">01</span>
+          <span class="card__badge badge--blue">Destaque</span>
+        </figure>
+        <div class="card__body">
+          <header class="card__meta">
+            <span class="card__icon icon--blue" aria-hidden="true"><i class="ri-boxing-line"></i></span>
+            <span class="card__category">Força &amp; Flexibilidade</span>
+          </header>
+          <h3 class="card__title">FLEX MUSCLE</h3>
+          <p class="card__desc">
+            Flexionar os músculos de forma consciente aumenta o fluxo sanguíneo,
+            desenvolve força neuromuscular e melhora a flexibilidade funcional.
+            Uma prática essencial para manter o tônus e prevenir lesões ao longo
+            da sua jornada atlética.
+          </p>
+          <!-- ADICIONADO: role="list" em todas as ul de chips -->
+          <ul class="card__chips" aria-label="Benefícios do Flex Muscle" role="list">
+            <li class="chip">Tônus Muscular</li>
+            <li class="chip">Prevenção de Lesões</li>
+            <li class="chip">Fluxo Sanguíneo</li>
+            <li class="chip">Força</li>
+          </ul>
+          <footer class="card__footer">
+            <div class="card__intensity" aria-label="Intensidade: Alta">
+              <div class="intensity-dots" aria-hidden="true">
+                <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot"></div>
+              </div>
+              <span>Alta</span>
+            </div>
+            <a href="#flex-muscle" class="card__cta" aria-label="Explorar Flex Muscle">
+              Explorar <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- CARD 1 DETAIL PANEL — FLEX MUSCLE -->
+      <div class="card-detail" id="flex-muscle-detail" data-for="flex-muscle" hidden aria-label="Detalhes: Flex Muscle">
+        <div class="card-detail__inner">
+          <blockquote class="card-detail__quote">
+            "A conexão mente-músculo é o segredo que separa os bons dos grandes atletas."
+          </blockquote>
+          <div class="card-detail__benefits">
+            <h4 class="card-detail__section-title"><i class="ri-check-double-line" aria-hidden="true"></i> Principais Benefícios</h4>
+            <ul role="list">
+              <li><i class="ri-heart-pulse-line" aria-hidden="true"></i> Aumenta o fluxo sanguíneo para os tecidos musculares</li>
+              <li><i class="ri-shield-check-line" aria-hidden="true"></i> Previne lesões ao fortalecer tendões e ligamentos</li>
+              <li><i class="ri-mental-health-line" aria-hidden="true"></i> Melhora a consciência corporal e conexão neuromuscular</li>
+              <li><i class="ri-timer-line" aria-hidden="true"></i> Sessões de 20–45 min já geram adaptações mensuráveis</li>
+            </ul>
+          </div>
+          <div class="card-detail__stats">
+            <div class="card-detail__stat"><strong style="color:var(--blue-light)">20%</strong><span>Mais força em 8 sem.</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--blue-light)">3×</strong><span>Sessões por semana</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--blue-light)">45°</strong><span>Amplitude de ganho</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--blue-light)">98%</strong><span>Taxa de satisfação</span></div>
+          </div>
+          <div class="card-detail__gallery">
+            <img src="assets/img/muscle2.jpg" alt="Treino Flex Muscle" loading="lazy">
+            <img src="assets/img/muscle3.jpg" alt="Treino de força" loading="lazy">
+          </div>
+          <div class="card-detail__actions">
+            <a href="#flex-muscle" class="btn btn--primary"><i class="ri-play-circle-line" aria-hidden="true"></i> Ver Treino</a>
+            <a href="#flex-muscle" class="btn btn--ghost"><i class="ri-calendar-line" aria-hidden="true"></i> Agendar Sessão</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 — CARDIO -->
+      <article class="card card--teal" id="cardio" data-category="teal" tabindex="0" aria-label="Cardio Exercise – Resistência Cardiovascular">
+        <figure class="card__visual">
+          <img
+            src="assets/img/cardio1.jpg"
+            alt="Atleta em treino de corrida de alta intensidade ao ar livre"
+            class="card__img"
+            loading="lazy"
+            width="600"
+            height="400"
+          >
+          <span class="card__num" aria-hidden="true">02</span>
+          <span class="card__badge badge--teal">Cardio</span>
+        </figure>
+        <div class="card__body">
+          <header class="card__meta">
+            <span class="card__icon icon--teal" aria-hidden="true"><i class="ri-heart-pulse-line"></i></span>
+            <span class="card__category">Resistência Cardiovascular</span>
+          </header>
+          <h3 class="card__title">CARDIO EXERCISE</h3>
+          <p class="card__desc">
+            Corrida, ciclismo e natação fortalecem o coração, ampliam a resistência
+            e otimizam a queima calórica. A base de qualquer programa de
+            condicionamento físico completo.
+          </p>
+          <ul class="card__chips" aria-label="Benefícios do Cardio Exercise" role="list">
+            <li class="chip">Saúde Cardíaca</li>
+            <li class="chip">Queima Calórica</li>
+            <li class="chip">Resistência</li>
+          </ul>
+          <footer class="card__footer">
+            <div class="card__intensity" aria-label="Intensidade: Média-Alta">
+              <div class="intensity-dots" aria-hidden="true">
+                <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+              </div>
+              <span>Média-Alta</span>
+            </div>
+            <a href="#cardio" class="card__cta" aria-label="Explorar Cardio Exercise">
+              Explorar <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- CARD 2 DETAIL PANEL — CARDIO -->
+      <div class="card-detail" id="cardio-detail" data-for="cardio" hidden aria-label="Detalhes: Cardio Exercise">
+        <div class="card-detail__inner">
+          <blockquote class="card-detail__quote card-detail__quote--teal">
+            "Cada batida do coração mais forte é um passo rumo a uma versão melhor de você."
+          </blockquote>
+          <div class="card-detail__benefits">
+            <h4 class="card-detail__section-title" style="color:var(--teal)"><i class="ri-check-double-line" aria-hidden="true"></i> Principais Benefícios</h4>
+            <ul role="list">
+              <li><i class="ri-heart-2-line" style="color:var(--teal)" aria-hidden="true"></i> Fortalece o músculo cardíaco e reduz risco cardiovascular</li>
+              <li><i class="ri-fire-line" style="color:var(--teal)" aria-hidden="true"></i> Queima entre 400–700 kcal por sessão de 45 min</li>
+              <li><i class="ri-lungs-line" style="color:var(--teal)" aria-hidden="true"></i> Aumenta a capacidade pulmonar e o VO₂ máximo</li>
+              <li><i class="ri-brain-line" style="color:var(--teal)" aria-hidden="true"></i> Libera endorfinas, combatendo estresse e ansiedade</li>
+            </ul>
+          </div>
+          <div class="card-detail__stats">
+            <div class="card-detail__stat"><strong style="color:var(--teal)">↓30%</strong><span>Risco cardíaco</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--teal)">500+</strong><span>Kcal / sessão</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--teal)">12 sem</strong><span>Para ver mudanças</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--teal)">3–5×</strong><span>Por semana ideal</span></div>
+          </div>
+          <div class="card-detail__gallery">
+            <img src="assets/img/cardio2.jpg" alt="Treino de cardio" loading="lazy">
+            <img src="assets/img/cardio3.jpg" alt="Corrida e condicionamento" loading="lazy">
+          </div>
+          <div class="card-detail__actions">
+            <a href="#cardio" class="btn btn--primary" style="background:var(--teal);border-color:var(--teal);color:#031a16"><i class="ri-route-line" aria-hidden="true"></i> Planos de Corrida</a>
+            <a href="#cardio" class="btn btn--ghost"><i class="ri-calendar-check-line" aria-hidden="true"></i> Começar Hoje</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 — PERSONAL TRAINING -->
+      <article class="card card--amber" id="personal-training" data-category="amber" tabindex="0" aria-label="Personal Training – Treinamento Personalizado">
+        <figure class="card__visual">
+          <img
+            src="assets/img/persona1.jpg"
+            alt="Personal trainer orientando aluno com técnica correta"
+            class="card__img"
+            loading="lazy"
+            width="600"
+            height="400"
+          >
+          <span class="card__num" aria-hidden="true">03</span>
+          <span class="card__badge badge--amber">Personal Training</span>
+        </figure>
+        <div class="card__body">
+          <header class="card__meta">
+            <span class="card__icon icon--amber" aria-hidden="true"><i class="ri-user-star-line"></i></span>
+            <span class="card__category">Treinamento Personalizado</span>
+          </header>
+          <h3 class="card__title">PERSONAL TRAINING</h3>
+          <p class="card__desc">
+            Coaching one-on-one adaptado aos seus objetivos exclusivos. Planos
+            personalizados e orientação especializada para resultados máximos
+            com risco mínimo de lesões.
+          </p>
+          <ul class="card__chips" aria-label="Benefícios do Personal Training" role="list">
+            <li class="chip">Plano Exclusivo</li>
+            <li class="chip">Coach Certificado</li>
+            <li class="chip">Resultados Rápidos</li>
+          </ul>
+          <footer class="card__footer">
+            <div class="card__intensity" aria-label="Intensidade: Variável">
+              <div class="intensity-dots" aria-hidden="true">
+                <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div>
+              </div>
+              <span>Variável</span>
+            </div>
+            <a href="#personal-training" class="card__cta" aria-label="Explorar Personal Training">
+              Explorar <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- CARD 3 DETAIL PANEL — PERSONAL TRAINING -->
+      <div class="card-detail" id="personal-training-detail" data-for="personal-training" hidden aria-label="Detalhes: Personal Training">
+        <div class="card-detail__inner">
+          <blockquote class="card-detail__quote card-detail__quote--amber">
+            "Com o coach certo, cada treino é um investimento, não um custo."
+          </blockquote>
+          <div class="card-detail__benefits">
+            <h4 class="card-detail__section-title" style="color:var(--amber)"><i class="ri-check-double-line" aria-hidden="true"></i> Principais Benefícios</h4>
+            <ul role="list">
+              <li><i class="ri-user-star-line" style="color:var(--amber)" aria-hidden="true"></i> Plano 100% individualizado ao seu biotipo e objetivo</li>
+              <li><i class="ri-search-eye-line" style="color:var(--amber)" aria-hidden="true"></i> Avaliação contínua com ajuste de cargas e volume</li>
+              <li><i class="ri-medal-line" style="color:var(--amber)" aria-hidden="true"></i> Coaches certificados CREF com experiência comprovada</li>
+              <li><i class="ri-alarm-warning-line" style="color:var(--amber)" aria-hidden="true"></i> Supervisão direta minimiza risco de lesões</li>
+            </ul>
+          </div>
+          <div class="card-detail__stats">
+            <div class="card-detail__stat"><strong style="color:var(--amber)">2×</strong><span>Resultados mais rápidos</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--amber)">98%</strong><span>Retenção de alunos</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--amber)">50+</strong><span>Profissionais</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--amber)">4.9★</strong><span>Avaliação média</span></div>
+          </div>
+          <div class="card-detail__gallery">
+            <img src="assets/img/persona2.jpg" alt="Personal trainer orientando" loading="lazy">
+            <img src="assets/img/persona3.jpg" alt="Treinamento personalizado" loading="lazy">
+          </div>
+          <div class="card-detail__actions">
+            <a href="#personal-training" class="btn btn--primary" style="background:var(--amber);border-color:var(--amber);color:#1a0f00"><i class="ri-user-add-line" aria-hidden="true"></i> Conhecer Coaches</a>
+            <a href="#personal-training" class="btn btn--ghost"><i class="ri-chat-3-line" aria-hidden="true"></i> Consulta Grátis</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 — Pilates -->
+      <article class="card card--red" id="weight" data-category="red" tabindex="0" aria-label="Weight Lifting – Força e Potência">
+        <figure class="card__visual">
+          <img
+            src="assets/img/pilates1.jpg"
+            alt="Atleta realizando levantamento de peso com técnica e potência"
+            class="card__img"
+            loading="lazy"
+            width="600"
+            height="400"
+          >
+          <span class="card__num" aria-hidden="true">04</span>
+          <span class="card__badge badge--red">Pilates</span>
+        </figure>
+        <div class="card__body">
+          <header class="card__meta">
+            <span class="card__icon icon--red" aria-hidden="true"><i class="ri-fire-fill"></i></span>
+            <span class="card__category">Força &amp; Estabilidade</span>
+          </header>
+          <h3 class="card__title">Pilates</h3>
+          <p class="card__desc">
+            Fortalece o core profundo, melhora a postura, aumenta a flexibilidade e
+            promove o equilíbrio entre força e controle muscular. A base para um corpo funcional e consciente.
+          </p>
+          <ul class="card__chips" aria-label="Benefícios do Weight Lifting" role="list">
+            <li class="chip">Fortalecimento do core</li>
+            <li class="chip">Melhora a Postura</li>
+            <li class="chip">Consciência Corporal</li>
+          </ul>
+          <footer class="card__footer">
+            <div class="card__intensity" aria-label="Intensidade: Muito Alta">
+              <div class="intensity-dots" aria-hidden="true">
+                <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div>
+              </div>
+              <span>Moderada Alta</span>
+            </div>
+            <a href="#weight" class="card__cta" aria-label="Explorar Weight Lifting">
+              Explorar <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- CARD 4 DETAIL PANEL — pilates -->
+      <div class="card-detail" id="weight-detail" data-for="weight" hidden aria-label="Detalhes: Weight Lifting">
+        <div class="card-detail__inner">
+          <blockquote class="card-detail__quote card-detail__quote--red">
+            "Com 10 sessões você sentirá a diferença, com 20 sessões os outros notarão e com 30 sessões sua vida mudará."
+          </blockquote>
+          <div class="card-detail__benefits">
+            <h4 class="card-detail__section-title" style="color:var(--red)"><i class="ri-check-double-line" aria-hidden="true"></i> Principais Benefícios</h4>
+            <ul role="list">
+              <li><i class="ri-sword-line" style="color:var(--red)" aria-hidden="true"></i> Fortalecer o Core e melhorar a postura corporal</li>
+              <li><i class="ri-building-4-line" style="color:var(--red)" aria-hidden="true"></i> Corrigir a postura e aliviar dores nas Costas</li>
+              <li><i class="ri-fire-fill" style="color:var(--red)" aria-hidden="true"></i> Almenta a flexibilidade e a mobilidade articular</li>
+              <li><i class="ri-award-fill" style="color:var(--red)" aria-hidden="true"></i> Promove equilíbrio, concentração e bem-estar mental</li>
+            </ul>
+          </div>
+          <div class="card-detail__stats">
+            <div class="card-detail__stat"><strong style="color:var(--red)">49%</strong><span>Flexibilidade em poucas semanas</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--red)">Melhora</strong><span>Postura e alívio de dores</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--red)">3–4×</strong><span>Por semana recomendado</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--red)">↓Risco</strong><span>Lesões com prática consciente</span></div>
+          </div>
+          <div class="card-detail__gallery">
+            <img src="assets/img/pilates2.jpg" alt="Levantamento de peso" loading="lazy">
+            <img src="assets/img/pilates3.jpg" alt="Treinamento de potência" loading="lazy">
+          </div>
+          <div class="card-detail__actions">
+            <a href="#weight" class="btn btn--primary" style="background:var(--red);border-color:var(--red)"><i class="ri-bar-chart-grouped-line" aria-hidden="true"></i> Ver Programa</a>
+            <a href="#weight" class="btn btn--ghost"><i class="ri-calendar-line" aria-hidden="true"></i> Agendar Avaliação</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 — CROSSFIT -->
+      <article class="card card--orange" id="crossfit" data-category="orange" tabindex="0" aria-label="CrossFit – Condicionamento Funcional de Alta Intensidade">
+        <figure class="card__visual">
+          <img
+            src="assets/img/crossfit1.jpg"
+            alt="Atleta executando movimento olímpico de levantamento em box de CrossFit"
+            class="card__img"
+            loading="lazy"
+            width="600"
+            height="400"
+          >
+          <span class="card__num" aria-hidden="true">05</span>
+          <span class="card__badge badge--orange">CrossFit</span>
+        </figure>
+        <div class="card__body">
+          <header class="card__meta">
+            <span class="card__icon icon--orange" aria-hidden="true"><i class="ri-flashlight-line"></i></span>
+            <span class="card__category">Condicionamento Funcional</span>
+          </header>
+          <h3 class="card__title">CROSSFIT</h3>
+          <p class="card__desc">
+            Movimentos funcionais constantemente variados executados em alta
+            intensidade. Combina levantamentos olímpicos, ginástica e cardio
+            em WODs que testam os limites do seu condicionamento físico geral.
+          </p>
+          <ul class="card__chips" aria-label="Benefícios do CrossFit" role="list">
+            <li class="chip">WOD Diário</li>
+            <li class="chip">Funcional</li>
+            <li class="chip">Comunidade</li>
+            <li class="chip">Alta Intensidade</li>
+          </ul>
+          <footer class="card__footer">
+            <div class="card__intensity" aria-label="Intensidade: Extrema">
+              <div class="intensity-dots" aria-hidden="true">
+                <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div>
+              </div>
+              <span>Extrema</span>
+            </div>
+            <a href="#crossfit" class="card__cta" aria-label="Explorar CrossFit">
+              Explorar <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- CARD 5 DETAIL PANEL — CROSSFIT -->
+      <div class="card-detail" id="crossfit-detail" data-for="crossfit" hidden aria-label="Detalhes: CrossFit">
+        <div class="card-detail__inner">
+          <blockquote class="card-detail__quote card-detail__quote--orange">
+            "O WOD de hoje é o seu limite de ontem — vencido."
+          </blockquote>
+          <div class="card-detail__benefits">
+            <h4 class="card-detail__section-title" style="color:var(--orange)"><i class="ri-check-double-line" aria-hidden="true"></i> Principais Benefícios</h4>
+            <ul role="list">
+              <li><i class="ri-flashlight-line" style="color:var(--orange)" aria-hidden="true"></i> Treino funcional que replica movimentos do mundo real</li>
+              <li><i class="ri-team-line" style="color:var(--orange)" aria-hidden="true"></i> Comunidade motivadora que acelera a evolução</li>
+              <li><i class="ri-pulse-line" style="color:var(--orange)" aria-hidden="true"></i> Combina força, cardio e ginástica num único WOD</li>
+              <li><i class="ri-timer-flash-line" style="color:var(--orange)" aria-hidden="true"></i> Alta intensidade variada elimina a estagnação</li>
+            </ul>
+          </div>
+          <div class="card-detail__stats">
+            <div class="card-detail__stat"><strong style="color:var(--orange)">WOD</strong><span>Todo dia diferente</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--orange)">60 min</strong><span>Duração média</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--orange)">∞</strong><span>Escalabilidade</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--orange)">95%</strong><span>Melhora de condicionamento</span></div>
+          </div>
+          <div class="card-detail__gallery">
+            <img src="assets/img/crossfit2.jpg" alt="CrossFit WOD" loading="lazy">
+            <img src="assets/img/crossfit3.jpg" alt="Levantamento olímpico" loading="lazy">
+          </div>
+          <div class="card-detail__actions">
+            <a href="#crossfit" class="btn btn--primary" style="background:var(--orange);border-color:var(--orange);color:#1a0800"><i class="ri-fire-line" aria-hidden="true"></i> WOD de Hoje</a>
+            <a href="#crossfit" class="btn btn--ghost"><i class="ri-group-line" aria-hidden="true"></i> Entrar na Comunidade</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 — BODYBUILDING -->
+      <article class="card card--purple" id="bodybuilding" data-category="purple" tabindex="0" aria-label="Bodybuilding – Hipertrofia e Estética Muscular">
+        <figure class="card__visual">
+          <img
+            src="assets/img/body1.jpg"
+            alt="Fisiculturista em pose de musculação destacando definição e simetria muscular"
+            class="card__img"
+            loading="lazy"
+            width="600"
+            height="400"
+          >
+          <span class="card__num" aria-hidden="true">06</span>
+          <span class="card__badge badge--purple">Bodybuilding</span>
+        </figure>
+        <div class="card__body">
+          <header class="card__meta">
+            <span class="card__icon icon--purple" aria-hidden="true"><i class="ri-award-line"></i></span>
+            <span class="card__category">Hipertrofia &amp; Estética</span>
+          </header>
+          <h3 class="card__title">BODYBUILDING</h3>
+          <p class="card__desc">
+            A ciência da escultura corporal. Treino de hipertrofia periodizado,
+            nutrição de precisão e recuperação estratégica para desenvolver
+            massa muscular, simetria e definição máxima com foco estético.
+          </p>
+          <ul class="card__chips" aria-label="Benefícios do Bodybuilding" role="list">
+            <li class="chip">Hipertrofia</li>
+            <li class="chip">Definição</li>
+            <li class="chip">Periodização</li>
+            <li class="chip">Simetria</li>
+          </ul>
+          <footer class="card__footer">
+            <div class="card__intensity" aria-label="Intensidade: Alta">
+              <div class="intensity-dots" aria-hidden="true">
+                <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot"></div>
+              </div>
+              <span>Alta</span>
+            </div>
+            <a href="#bodybuilding" class="card__cta" aria-label="Explorar Bodybuilding">
+              Explorar <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- CARD 6 DETAIL PANEL — BODYBUILDING -->
+      <div class="card-detail" id="bodybuilding-detail" data-for="bodybuilding" hidden aria-label="Detalhes: Bodybuilding">
+        <div class="card-detail__inner">
+          <blockquote class="card-detail__quote card-detail__quote--purple">
+            "O corpo é a tela — a disciplina é o pincel."
+          </blockquote>
+          <div class="card-detail__benefits">
+            <h4 class="card-detail__section-title" style="color:var(--purple)"><i class="ri-check-double-line" aria-hidden="true"></i> Principais Benefícios</h4>
+            <ul role="list">
+              <li><i class="ri-award-line" style="color:var(--purple)" aria-hidden="true"></i> Hipertrofia máxima com periodização científica</li>
+              <li><i class="ri-scales-3-line" style="color:var(--purple)" aria-hidden="true"></i> Nutrição de precisão para cada fase: bulk e cut</li>
+              <li><i class="ri-eye-line" style="color:var(--purple)" aria-hidden="true"></i> Foco em simetria, proporção e estética corporal</li>
+              <li><i class="ri-time-line" style="color:var(--purple)" aria-hidden="true"></i> Recuperação estratégica como parte do treino</li>
+            </ul>
+          </div>
+          <div class="card-detail__stats">
+            <div class="card-detail__stat"><strong style="color:var(--purple)">16 sem</strong><span>Ciclo de hipertrofia</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--purple)">↑3 kg</strong><span>Massa magra / ciclo</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--purple)">5–6×</strong><span>Treinos por semana</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--purple)">8–12</strong><span>Repetições alvo</span></div>
+          </div>
+          <div class="card-detail__gallery">
+            <img src="assets/img/body2.jpg" alt="Bodybuilding" loading="lazy">
+            <img src="assets/img/body3.jpg" alt="Treino de hipertrofia" loading="lazy">
+          </div>
+          <div class="card-detail__actions">
+            <a href="#bodybuilding" class="btn btn--primary" style="background:var(--purple);border-color:var(--purple)"><i class="ri-bar-chart-line" aria-hidden="true"></i> Plano de Hipertrofia</a>
+            <a href="#bodybuilding" class="btn btn--ghost"><i class="ri-restaurant-line" aria-hidden="true"></i> Guia Nutricional</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 — BOX -->
+      <article class="card card--green" id="box" data-category="green" tabindex="0" aria-label="Box – Boxe e Artes Marciais">
+        <figure class="card__visual">
+          <img
+            src="assets/img/box1.jpg"
+            alt="Atleta praticando boxe com luvas em saco de pancadas em academia"
+            class="card__img"
+            loading="lazy"
+            width="600"
+            height="400"
+          >
+          <span class="card__num" aria-hidden="true">07</span>
+          <span class="card__badge badge--green">Box</span>
+        </figure>
+        <div class="card__body">
+          <header class="card__meta">
+            <span class="card__icon icon--green" aria-hidden="true"><i class="ri-shield-star-line"></i></span>
+            <span class="card__category">Luta &amp; Condicionamento</span>
+          </header>
+          <h3 class="card__title">BOX</h3>
+          <p class="card__desc">
+            Técnica, velocidade e resistência combinadas. O treino de boxe
+            desenvolve coordenação motora, reflexo, agilidade e uma
+            capacidade cardiovascular excepcional enquanto trabalha o corpo
+            inteiro a cada round.
+          </p>
+          <ul class="card__chips" aria-label="Benefícios do Box" role="list">
+            <li class="chip">Coordenação</li>
+            <li class="chip">Reflexo</li>
+            <li class="chip">Cardio</li>
+            <li class="chip">Agilidade</li>
+          </ul>
+          <footer class="card__footer">
+            <div class="card__intensity" aria-label="Intensidade: Muito Alta">
+              <div class="intensity-dots" aria-hidden="true">
+                <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div>
+              </div>
+              <span>Muito Alta</span>
+            </div>
+            <a href="#box" class="card__cta" aria-label="Explorar Box">
+              Explorar <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </footer>
+        </div>
+      </article>
+
+      <!-- CARD 7 DETAIL PANEL — BOX -->
+      <div class="card-detail" id="box-detail" data-for="box" hidden aria-label="Detalhes: Box">
+        <div class="card-detail__inner">
+          <blockquote class="card-detail__quote card-detail__quote--green">
+            "No ringue ou na vida — quem está preparado chega primeiro."
+          </blockquote>
+          <div class="card-detail__benefits">
+            <h4 class="card-detail__section-title" style="color:var(--green)"><i class="ri-check-double-line" aria-hidden="true"></i> Principais Benefícios</h4>
+            <ul role="list">
+              <li><i class="ri-shield-star-line" style="color:var(--green)" aria-hidden="true"></i> Desenvolve coordenação motora fina e reflexos rápidos</li>
+              <li><i class="ri-heart-pulse-line" style="color:var(--green)" aria-hidden="true"></i> Capacidade cardiovascular excepcional em rounds intensos</li>
+              <li><i class="ri-mental-health-line" style="color:var(--green)" aria-hidden="true"></i> Libera tensão e melhora saúde mental comprovadamente</li>
+              <li><i class="ri-hand-coin-line" style="color:var(--green)" aria-hidden="true"></i> Trabalha o corpo inteiro com ênfase em core e membros superiores</li>
+            </ul>
+          </div>
+          <div class="card-detail__stats">
+            <div class="card-detail__stat"><strong style="color:var(--green)">700+</strong><span>Kcal por sessão</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--green)">3 min</strong><span>Duração de cada round</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--green)">↑40%</strong><span>Melhora de reflexo</span></div>
+            <div class="card-detail__stat"><strong style="color:var(--green)">2–3×</strong><span>Por semana recomendado</span></div>
+          </div>
+          <div class="card-detail__gallery">
+            <img src="assets/img/box2.jpg" alt="Treino de boxe" loading="lazy">
+            <img src="assets/img/box3.jpg" alt="Condicionamento físico" loading="lazy">
+          </div>
+          <div class="card-detail__actions">
+            <a href="#box" class="btn btn--primary" style="background:var(--green);border-color:var(--green);color:#021a0a"><i class="ri-boxing-line" aria-hidden="true"></i> Primeira Aula Grátis</a>
+            <a href="#box" class="btn btn--ghost"><i class="ri-film-line" aria-hidden="true"></i> Ver Demonstração</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Empty state (shown when filter has no results) -->
+    <div class="empty-state" id="empty-state" hidden aria-live="polite" role="status">
+      <i class="ri-search-line" aria-hidden="true"></i>
+      <p>Nenhuma modalidade encontrada para esse filtro.</p>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ PROMO BAND -->
+  <section class="promo" aria-labelledby="promo-heading">
+    <div class="promo__inner">
+      <div class="promo__text">
+        <p class="promo__eyebrow">Próximo Passo</p>
+        <h2 class="promo__title" id="promo-heading">PRONTO PARA<br>COMEÇAR?</h2>
+        <p class="promo__sub">Escolha o plano ideal e inicie sua transformação com os melhores profissionais.</p>
+      </div>
+      <div class="promo__actions">
+        <a href="index.html#pricing" class="btn btn--primary">
+          <i class="ri-vip-crown-line" aria-hidden="true"></i> Ver Planos
+        </a>
+        <a href="index.html#choose" class="btn btn--ghost">
+          <i class="ri-information-line" aria-hidden="true"></i> Diferenciais
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <small>&copy; 2026 <a href="index.html" aria-label="Página inicial SMART - ACTIVE">SMART - ACTIVE</a>. Todos os direitos reservados.</small>
+      <nav class="footer-nav" aria-label="Links de navegação do rodapé">
+        <a href="#flex-muscle">Flex Muscle</a>
+        <a href="#cardio">Cardio</a>
+        <a href="#personal-training">Personal</a>
+        <a href="#weight">Weight Lifting</a>
+        <a href="#crossfit">CrossFit</a>
+        <a href="#bodybuilding">Bodybuilding</a>
+        <a href="#box">Box</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════ BACK TO TOP -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao topo da página" hidden>
+    <i class="ri-arrow-up-line" aria-hidden="true"></i>
+  </button>
+
+  <!-- ═══════════════════════════════════════════ TOAST NOTIFICATION -->
+  <!-- CORRIGIDO: </o> → </output> (tag malformada que gerava DOM inválido) -->
+  <output class="toast" id="toast" aria-live="polite" aria-atomic="true"></output>
+
+  <!-- Scripts -->
+  <script src="assets/js/mainpage.js" defer></script>
+</body>
+</html>

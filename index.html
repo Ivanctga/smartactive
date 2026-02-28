@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SMART ACTIVE — Academia premium com programas personalizados de musculação, cardio, yoga e treinamento funcional. Transforme seu corpo com os melhores profissionais.">
+  <meta name="keywords" content="academia, fitness, musculação, treino, saúde, bem-estar">
+  <meta name="author" content="SMART ACTIVE Fitness">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SMART ACTIVE — Academia Premium">
+  <meta property="og:description" content="Transforme seu corpo com programas personalizados e profissionais qualificados">
+
+  <link rel="icon" href="assets/img/logo.ico" type="image/x-icon">
+  <title>SMART ACTIVE | Shape Your Best Self</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@500;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#home" class="nav__logo" aria-label="SMART ACTIVE — Página inicial">
+        <img src="assets/img/logo1.ico" alt="Logo SMART - ACTIVE">      
+        <span class="nav__logo-text">SMART<span>ACTIVE</span></span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home"    class="nav__link active-link">Início</a></li>
+          <li><a href="#program" class="nav__link">Programas</a></li>
+          <li><a href="#space"   class="nav__link">Espaço</a></li>
+          <li><a href="#pricing" class="nav__link">Planos</a></li>
+          <li><a href="sobre.html"  class="nav__link">Sobre</a></li>
+        </ul>
+        <a href="#footer" class="button nav__cta">Começar Agora <i class="ri-arrow-right-up-line"></i></a>
+        <button class="nav__close" id="nav-close" aria-label="Fechar menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- ═══════════════════════════ HOME ═══════════════════════════ -->
+    <section class="home" id="home">
+      <!-- Cinematic background -->
+      <div class="home__bg" aria-hidden="true">
+        <div class="home__bg-gradient"></div>
+        <div class="home__bg-grid"></div>
+        <div class="home__bg-orb home__bg-orb--1"></div>
+        <div class="home__bg-orb home__bg-orb--2"></div>
+      </div>
+
+      <div class="home__container container">
+        <div class="home__data">
+          <p class="home__eyebrow"><span class="home__eyebrow-dot"></span> Academia Premium · Est. 2018</p>
+          <h1 class="home__title">
+            <span class="home__title-outline">FORJE
+              <span class="home__title-solid">SEU</span>
+            </span>
+            
+            <span class="home__title-accent">LIMITE</span>
+          </h1>
+          <p class="home__description">
+            Performance não é acidente. É a soma de cada repetição, cada escolha, cada dia que você decide ser melhor. Venha treinar onde os melhores evoluem.
+          </p>
+          <div class="home__actions">
+            <a href="#program" class="button button--primary">
+              Explorar Programas <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="#pricing" class="button button--ghost">
+              Ver Planos
+            </a>
+          </div>
+          <div class="home__stats">
+            <div class="home__stat">
+              <strong>+2.400</strong>
+              <span>Alunos ativos</span>
+            </div>
+            <div class="home__stat-divider" aria-hidden="true"></div>
+            <div class="home__stat">
+              <strong>18</strong>
+              <span>Modalidades</span>
+            </div>
+            <div class="home__stat-divider" aria-hidden="true"></div>
+            <div class="home__stat">
+              <strong>98%</strong>
+              <span>Satisfação</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="home__visual" aria-hidden="true">
+          <div class="home__visual-ring home__visual-ring--outer"></div>
+          <div class="home__visual-ring home__visual-ring--inner"></div>
+          <div class="home__visual-frame">
+            <img src="assets/img/home-img.png" alt="Atleta em posição de treino" class="home__img" loading="eager">
+            <div class="home__visual-badge">
+              <i class="ri-fire-fill"></i>
+              <span>Alta<br>Performance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home__scroll-indicator" aria-hidden="true">
+        <div class="home__scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ BRANDS ═══════════════════════════ -->
+    <section class="logos" aria-label="Marcas parceiras">
+      <div class="logos__container container">
+        <p class="logos__label">Parceiros de elite</p>
+        <div class="logos__track">
+          <div class="logos__inner">
+            <img src="assets/img/marca1.png" alt="Parceiro 1" class="logos__img" loading="lazy">
+            <img src="assets/img/marca2.png" alt="Parceiro 2" class="logos__img" loading="lazy">
+            <img src="assets/img/marca3.png" alt="Parceiro 3" class="logos__img" loading="lazy">
+            <img src="assets/img/marca4.png" alt="Parceiro 4" class="logos__img" loading="lazy">
+            <img src="assets/img/marca5.png" alt="Parceiro 5" class="logos__img" loading="lazy">
+            <!-- duplicated for infinite scroll -->
+            <img src="assets/img/marca1.png" alt="" class="logos__img" aria-hidden="true">
+            <img src="assets/img/marca2.png" alt="" class="logos__img" aria-hidden="true">
+            <img src="assets/img/marca3.png" alt="" class="logos__img" aria-hidden="true">
+            <img src="assets/img/marca4.png" alt="" class="logos__img" aria-hidden="true">
+            <img src="assets/img/marca5.png" alt="" class="logos__img" aria-hidden="true">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROGRAMS ═══════════════════════════ -->
+    <section class="program section" id="program">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__label"><span></span> Programas</div>
+          <h2 class="section__title">
+            <span class="section__title-outline">ALTA</span>
+            <span class="section__title-solid">PERFORMANCE</span>
+          </h2>
+          <p class="section__desc">Cada modalidade foi desenvolvida para levar você além dos seus limites com segurança e eficiência.</p>
+        </div>
+
+        <div class="program__grid">
+          <article class="program__card" tabindex="0">
+            <div class="program__card-num">01</div>
+            <div class="program__icon-wrap">
+              <img src="assets/img/program1.png" alt="" class="program__icon" loading="lazy" aria-hidden="true">
+            </div>
+            <div class="program__body">
+              <h3 class="program__title">Musculação</h3>
+              <p class="program__desc">Desenvolvimento muscular com técnicas avançadas para hipertrofia controlada e força máxima.</p>
+            </div>
+            <a href="page.html#topics-grid" class="program__link" aria-label="Saiba mais sobre Musculação">              
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+            <div class="program__card-bg" aria-hidden="true"></div>
+          </article>
+
+          <article class="program__card" tabindex="0">
+            <div class="program__card-num">02</div>
+            <div class="program__icon-wrap">
+              <img src="assets/img/program2.png" alt="" class="program__icon" loading="lazy" aria-hidden="true">
+            </div>
+            <div class="program__body">
+              <h3 class="program__title">Cardio Funcional</h3>
+              <p class="program__desc">Exercícios cardiovasculares que utilizam grandes grupos musculares para máxima queima calórica.</p>
+            </div>
+            <a href="page.html" class="program__link" aria-label="Saiba mais sobre Cardio">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+            <div class="program__card-bg" aria-hidden="true"></div>
+          </article>
+
+          <article class="program__card" tabindex="0">
+            <div class="program__card-num">03</div>
+            <div class="program__icon-wrap">
+              <img src="assets/img/program3.png" alt="" class="program__icon" loading="lazy" aria-hidden="true">
+            </div>
+            <div class="program__body">
+              <h3 class="program__title">Yoga Essencial</h3>
+              <p class="program__desc">Práticas físicas, mentais e espirituais ancestrais para equilíbrio completo do corpo e da mente.</p>
+            </div>
+            <a href="page.html" class="program__link" aria-label="Saiba mais sobre Yoga">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+            <div class="program__card-bg" aria-hidden="true"></div>
+          </article>
+
+          <article class="program__card" tabindex="0">
+            <div class="program__card-num">04</div>
+            <div class="program__icon-wrap">
+              <img src="assets/img/program4.png" alt="" class="program__icon" loading="lazy" aria-hidden="true">
+            </div>
+            <div class="program__body">
+              <h3 class="program__title">Levantamento</h3>
+              <p class="program__desc">Potência e técnica com orientação especializada para maximizar sua performance atlética.</p>
+            </div>
+            <a href="page.html" class="program__link" aria-label="Saiba mais sobre Levantamento">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+            <div class="program__card-bg" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CHOOSE ═══════════════════════════ -->
+    <section class="choose section" id="choose">
+      <div class="choose__container container">
+        <div class="choose__img-wrap">
+          <img src="assets/img/cardio2.jpg" alt="Equipamentos de alta performance" class="choose__img" loading="lazy">
+          <div class="choose__img-badge">
+            <div class="choose__img-badge-inner">
+              <strong>6+</strong>
+              <span>Anos de<br>Excelência</span>
+            </div>
+          </div>
+          <div class="choose__img-tag"><i class="ri-shield-check-fill"></i> Certificado ISO</div>
+        </div>
+
+        <div class="choose__content">
+          <div class="section__label"><span></span> Por que nos escolher</div>
+          <h2 class="section__title">
+            <span class="section__title-outline">RAZÕES</span>
+            <span class="section__title-solid">PARA</span>
+            <span class="section__title-accent">EVOLUIR</span>
+          </h2>
+
+          <div class="choose__list">
+            <div class="choose__item">
+              <div class="choose__item-icon"><i class="ri-user-star-line"></i></div>
+              <div>
+                <h4>Profissionais Certificados</h4>
+                <p>Equipe com formação internacional e metodologia comprovada.</p>
+              </div>
+            </div>
+            <div class="choose__item">
+              <div class="choose__item-icon"><i class="ri-bar-chart-box-line"></i></div>
+              <div>
+                <h4>Acompanhamento de Resultados</h4>
+                <p>Monitoramento periódico com avaliações físicas e relatórios personalizados.</p>
+              </div>
+            </div>
+            <div class="choose__item">
+              <div class="choose__item-icon"><i class="ri-time-line"></i></div>
+              <div>
+                <h4>Horários Flexíveis</h4>
+                <p>Funcionamento 24 horas para você treinar no seu ritmo.</p>
+              </div>
+            </div>
+            <div class="choose__item">
+              <div class="choose__item-icon"><i class="ri-heart-pulse-line"></i></div>
+              <div>
+                <h4>Equipamentos Premium</h4>
+                <p>Tecnologia de ponta das melhores marcas do mercado fitness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SPACE / GALLERY ═══════════════════════════ -->
+    <section class="space section" id="space">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <div class="section__label"><span></span> Galeria</div>
+          <h2 class="section__title">
+            <span class="section__title-outline">NOSSO</span>
+            <span class="section__title-solid">ESPAÇO</span>
+          </h2>
+        </div>
+
+        <!-- Row 1: Banner (left) + Info cards (right) -->
+        <div class="space__top-row">
+
+          <!-- Left col: banner + carousel -->
+          <div class="space__gallery-col">
+            <!-- Main banner -->
+            <div class="space__banner">
+              <img src="assets/img/espaco1.jpg" alt="Espaço da academia" class="space__banner-img" id="space-banner" loading="lazy">
+              <div class="space__banner-overlay"></div>
+            </div>
+
+            <!-- Carousel strip below banner -->
+            <div class="space__carousel-strip">
+              <button class="space__nav-btn" id="space-prev" aria-label="Anterior">
+                <i class="ri-arrow-left-s-line"></i>
+              </button>
+              <div class="space__carousel-viewport" id="space-viewport">
+                <div class="space__carousel-track" id="space-track">
+                  <button class="space__thumb space__thumb--active" aria-label="Espaço 1">
+                    <img src="assets/img/esp1.jpg" alt="Espaço 1" loading="lazy">
+                  </button>
+                  <button class="space__thumb" aria-label="Espaço 2">
+                    <img src="assets/img/esp2.jpg" alt="Espaço 2" loading="lazy">
+                  </button>
+                  <button class="space__thumb" aria-label="Espaço 3">
+                    <img src="assets/img/esp3.jpg" alt="Espaço 3" loading="lazy">
+                  </button>
+                  <button class="space__thumb" aria-label="Espaço 4">
+                    <img src="assets/img/esp4.jpg" alt="Espaço 4" loading="lazy">
+                  </button>
+                  <button class="space__thumb" aria-label="Espaço 5">
+                    <img src="assets/img/esp5.jpg" alt="Espaço 5" loading="lazy">
+                  </button>
+                   <button class="space__thumb" aria-label="Espaço 5">
+                    <img src="assets/img/esp6.jpg" alt="Espaço 5" loading="lazy">
+                  </button>
+                   <button class="space__thumb" aria-label="Espaço 5">
+                    <img src="assets/img/esp7.jpg" alt="Espaço 5" loading="lazy">
+                  </button>
+                   <button class="space__thumb" aria-label="Espaço 5">
+                    <img src="assets/img/esp8.jpg" alt="Espaço 5" loading="lazy">
+                  </button>
+                </div>
+              </div>
+              <button class="space__nav-btn" id="space-next" aria-label="Próximo">
+                <i class="ri-arrow-right-s-line"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right col: info cards + map -->
+          <div class="space__info-col">
+
+            <!-- Card: Horário -->
+            <div class="space__info-card">
+              <div class="space__info-card-header">
+                <div class="space__info-card-icon"><i class="ri-time-line"></i></div>
+                <h3 class="space__info-card-title">Horário de Funcionamento</h3>
+              </div>
+              <ul class="space__hours-list">
+                <li class="space__hours-item">
+                  <span class="space__hours-day"><i class="ri-calendar-line"></i> Seg a Sex</span>
+                  <span class="space__hours-time">5h – 23h</span>
+                </li>
+                <li class="space__hours-item">
+                  <span class="space__hours-day"><i class="ri-calendar-2-line"></i> Sáb / Feriados</span>
+                  <span class="space__hours-time">8h – 17h</span>
+                </li>
+                <li class="space__hours-item">
+                  <span class="space__hours-day"><i class="ri-sun-line"></i> Dom</span>
+                  <span class="space__hours-time">8h – 14h</span>
+                </li>
+              </ul>
+              <div class="space__open-badge">
+                <span class="space__open-dot"></span> Aberto agora
+              </div>
+            </div>
+
+            <!-- Card: Endereço + Mapa -->
+            <div class="space__info-card space__info-card--map">
+              <div class="space__info-card-header">
+                <div class="space__info-card-icon"><i class="ri-map-pin-line"></i></div>
+                <h3 class="space__info-card-title">Endereço</h3>
+              </div>
+              <address class="space__address">
+                <p class="space__address-street">Avenida Roberto Burle Mark</p>
+                <p class="space__address-city">Ipatinga – MG, 351010-040</p>
+              </address>
+              <div class="space__map-wrap">
+               
+                <iframe
+                  title="Localização SMART ACTIVE"
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7523.288578426175!2d-42.5464076083955!3d-19.47089741196923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb0003b4d3def2b%3A0xe71d93267cad72d5!2sParque%20Ipanema%2C%20Ipatinga%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1771877924543!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="180"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/RCfkvoNwUax1wbrj6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="space__directions-btn"
+              >
+                <i class="ri-navigation-line"></i> Como Chegar
+              </a>
+            </div>
+
+          </div><!-- /info-col -->
+        </div><!-- /top-row -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PRICING ═══════════════════════════ -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <div class="section__label"><span></span> Investimento</div>
+          <h2 class="section__title">
+            <span class="section__title-outline">ESCOLHA</span>
+            <span class="section__title-solid">SEU PLANO</span>
+          </h2>
+        </div>
+
+        <div class="pricing__grid">
+          <!-- Básico -->
+          <article class="pricing__card">
+            <div class="pricing__card-icon">
+              <!-- <i class="ri-seedling-line"></i> -->
+               <img src="assets/img/preco1.png" alt="">
+            </div>
+            <div class="pricing__tier">Básico</div>
+            <div class="pricing__price">
+              <span class="pricing__currency">R$</span>
+              <strong>89</strong>
+              <span class="pricing__period">/mês</span>
+            </div>
+            <p class="pricing__tagline">O ponto de partida ideal</p>
+            <ul class="pricing__list">
+              <li><i class="ri-check-line"></i> Acesso às áreas comuns</li>
+              <li><i class="ri-check-line"></i> Musculação livre</li>
+              <li><i class="ri-check-line"></i> Vestiários modernos</li>
+              <li><i class="ri-close-line pricing__list-no"></i> Personal trainer</li>
+              <li><i class="ri-close-line pricing__list-no"></i> Aulas coletivas</li>
+            </ul>
+            <a href="#footer" class="button button--outline">Assinar Básico</a>
+          </article>
+
+          <!-- Premium — destaque -->
+          <article class="pricing__card pricing__card--featured">
+            <div class="pricing__featured-badge">Mais Popular</div>
+            <div class="pricing__card-icon pricing__card-icon--featured">
+              <!-- <i class="ri-trophy-line"></i> -->
+              <img src="assets/img/preco2.png" alt="">
+            </div>
+            <div class="pricing__tier">Premium</div>
+            <div class="pricing__price">
+              <span class="pricing__currency">R$</span>
+              <strong>159</strong>
+              <span class="pricing__period">/mês</span>
+            </div>
+            <p class="pricing__tagline">Para quem quer resultados reais</p>
+            <ul class="pricing__list">
+              <li><i class="ri-check-line"></i> Acesso total à academia</li>
+              <li><i class="ri-check-line"></i> Todas as aulas coletivas</li>
+              <li><i class="ri-check-line"></i> Avaliação física mensal</li>
+              <li><i class="ri-check-line"></i> App de treino exclusivo</li>
+              <li><i class="ri-close-line pricing__list-no"></i> Nutricionista</li>
+            </ul>
+            <a href="#footer" class="button button--primary">Assinar Premium</a>
+          </article>
+
+          <!-- Diamond -->
+          <article class="pricing__card pricing__card--diamond">
+            <div class="pricing__card-icon pricing__card-icon--diamond">
+              <!-- <i class="ri-vip-diamond-line"></i> -->
+              <img src="assets/img/preco3.png" alt="">
+            </div>
+            <div class="pricing__tier">Diamond</div>
+            <div class="pricing__price">
+              <span class="pricing__currency">R$</span>
+              <strong>249</strong>
+              <span class="pricing__period">/mês</span>
+            </div>
+            <p class="pricing__tagline">A experiência máxima</p>
+            <ul class="pricing__list">
+              <li><i class="ri-check-line"></i> Acesso VIP ilimitado</li>
+              <li><i class="ri-check-line"></i> Personal trainer dedicado</li>
+              <li><i class="ri-check-line"></i> Consultoria nutricional</li>
+              <li><i class="ri-check-line"></i> Kit completo incluído</li>
+              <li><i class="ri-check-line"></i> Suplemento proteico</li>
+            </ul>
+            <a href="#footer" class="button button--diamond">Assinar Diamond</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CALCULATE IMC ═══════════════════════════ -->
+    <section class="calculate section" id="calculate">
+      <div class="calculate__container container">
+        <div class="calculate__content">
+          <div class="section__label"><span></span> Ferramenta</div>
+          <h2 class="section__title">
+            <span class="section__title-outline">CALCULE</span>
+            <span class="section__title-solid">SEU IMC</span>
+          </h2>
+          <p class="calculate__desc">Descubra seu Índice de Massa Corporal e entenda onde você está na sua jornada de transformação.</p>
+
+          <form class="calculate__form" id="calculate-form" novalidate>
+            <div class="calculate__field">
+              <label for="calculate-cm">Altura</label>
+              <div class="calculate__input-wrap">
+                <input type="number" id="calculate-cm" placeholder="175" min="100" max="250" aria-label="Altura em centímetros">
+                <span class="calculate__unit">cm</span>
+              </div>
+            </div>
+            <div class="calculate__field">
+              <label for="calculate-kg">Peso</label>
+              <div class="calculate__input-wrap">
+                <input type="number" id="calculate-kg" placeholder="75" min="30" max="300" aria-label="Peso em quilogramas">
+                <span class="calculate__unit">kg</span>
+              </div>
+            </div>
+            <button type="submit" class="button button--primary calculate__btn">
+              Calcular IMC <i class="ri-calculator-line"></i>
+            </button>
+          </form>
+
+          <div class="calculate__result" id="calculate-message" role="alert" aria-live="polite"></div>
+        </div>
+
+        <div class="calculate__visual" aria-hidden="true">
+          <img src="assets/img/modelo5.png" alt="" class="calculate__img" loading="lazy">
+          <div class="calculate__visual-deco"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer__top container">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <img src="assets/img/logo1.ico" alt="Logo SMART">  
+          <!-- <span class="nav__logo-mark">S</span> -->
+          <span class="nav__logo-text">SMART<span>ACTIVE</span></span>
+        </a>
+        <p class="footer__tagline">Onde a transformação começa.</p>
+        <form class="footer__form" id="contact-form">
+          <input type="email" name="user_email" id="contact-user" placeholder="Seu melhor e-mail" class="footer__input" required>
+          <button type="submit" class="button button--primary">Inscrever-se</button>
+        </form>
+        <p class="footer__message" id="contact-message" role="alert" aria-live="polite"></p>
+      </div>
+
+      <nav class="footer__links-grid" aria-label="Links do rodapé">
+        <div class="footer__col">
+          <h3 class="footer__col-title">Serviços</h3>
+          <ul>
+            <li><a href="#program" class="footer__link">Musculação</a></li>
+            <li><a href="#program" class="footer__link">Cardio Funcional</a></li>
+            <li><a href="#program" class="footer__link">Yoga Essencial</a></li>
+            <li><a href="#program" class="footer__link">Levantamento</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Planos</h3>
+          <ul>
+            <li><a href="#pricing" class="footer__link">Básico</a></li>
+            <li><a href="#pricing" class="footer__link">Premium</a></li>
+            <li><a href="#pricing" class="footer__link">Diamond</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Empresa</h3>
+          <ul>
+            <li><a href="#choose" class="footer__link">Sobre Nós</a></li>
+            <li><a href="#" class="footer__link">Carreiras</a></li>
+            <li><a href="#" class="footer__link">Depoimentos</a></li>
+            <li><a href="#" class="footer__link">Parceiros</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom container">
+      <span class="footer__copy">&copy; 2026 SMART ACTIVE. Todos os direitos reservados.</span>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter / X">
+          <i class="ri-twitter-x-fill"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+          <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube">
+          <i class="ri-youtube-line"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-up -->
+  <a href="#home" class="scrollup" id="scroll-up" aria-label="Voltar ao topo">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+
+  <script src="assets/js/scrollreveal.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
